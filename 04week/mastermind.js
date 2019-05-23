@@ -28,14 +28,35 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-function generateHint() {
-  // your code here
-}
+function generateHint(guess) {
+  let =0, letterexist=0;
+  let solutionArray=solution.split('');
+  let guessArray= guess.split('');
+  guessArray.forEach((item,index) =>
+{
+    if (item === solutionArray[index])
+    {
+    correctLetterLocations =1;
+    solutionArray[findindex]='';
+    guessArray[index]='';
+    }
+  })
+guessArray.forEach((item,index) =>
+{ if ( item !==''){
+     let findIndex =solutionArray.indexOf
+     if (findIndex >-1 )
+    {
 
 function mastermind(guess) {
   solution = 'abcd'; // Comment this out to generate a random solution
   // your code here
+  let hint=generateHint(guess);
+  board.push[ $(guess)]
 }
+
+
+
+
 
 
 function getPrompt() {

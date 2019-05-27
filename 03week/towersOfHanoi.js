@@ -21,6 +21,15 @@ function printStacks() {
 
 function movePiece() {
   // Your code here
+<<<<<<< Updated upstream
+=======
+if ( stacks[startStack].length == 0 && stacks[endStack].length == 0 ) {
+
+if ( elmt1 > 0 && stacks[endStack].length == 0 ) 
+return true;
+return false;
+
+>>>>>>> Stashed changes
 
 }
 

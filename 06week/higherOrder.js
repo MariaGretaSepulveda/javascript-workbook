@@ -3,48 +3,46 @@
 const assert = require('assert');
 
 function forEach(arr, callback) {
-  // Your code here
-  for(let i=0; i<arr.length;i++)
-{
-callback(arr[i]);
+  for(let i=0; i< arr.length; i++){
+    callback(arr[i]);
   }
 }
 
-
 function map(arr, callback) {
-  // Your code here
-  let x = [];
-  for(let i=0;i<arr.length;i++)
-{
-x.push(callback(arr[i]));
-}
-}
-function filter(arr, callback) {
-  // Your code here
-  let x =[];
-  for(let i=0;i<arr.length;i++){
-  if(callback(arr[i]))
-  x.push(arr[i]);
-}
-return x;
-}
-function some(arr, callback) {
-  // Your code here
-  for(let i=0;i<arr.length;i++)
-  { if(callback(arr[i]))
-    return true;
-}
-return false;
-}
-function every(arr, callback) {
-  // Your code here
-  for(let i=0;i<arr.length;i++)
-  { if(!callback(arr[i]))
-    return false;
-}
-return true; 
+ let x = []
+  for( let i = 0; i < arr.length; i++ ){
+ x.push(callback(arr[i]))
+ }
+ return x;
+
 }
 
+function filter(arr, callback) {
+  let x = []
+  for(let y = 0; y < arr.length; y++)
+  { if(callback(arr[y]))
+      x.push(arr[y])
+  }
+  return x
+}
+
+function some(arr, callback) {
+    for(let i = 0; i < arr.length; i++){
+      if(callback(arr[i]))
+      return true
+ 
+    }
+    return false
+}
+
+function every(arr, callback) {
+  for(let i = 0; i < arr.length; i++){
+  if(!callback(arr[i]))
+  return false
+
+} 
+return true
+}
 
 if (typeof describe === 'function') {
 
@@ -123,4 +121,5 @@ if (typeof describe === 'function') {
 } else {
 
   console.log('Only run the tests on this one!')
+
 }

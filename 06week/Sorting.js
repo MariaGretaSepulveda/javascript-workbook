@@ -24,8 +24,8 @@ console.log(valEven);
 
 // Find the index of the first value when added to it's index = 512 (#ATX!!)
 
-const atxIdx = digitsArr.findIndex((num, index) => num + index === 512);
-console.log(`index: ${atxIdx}, value: ${nums[atxIdx]}`);
+const ATXIdx = digitsArr.findIndex((num, index) => num + index === 512);
+console.log(`index: ${ATXIdx}, value: ${nums[ATXIdx]}`);
 
 
 

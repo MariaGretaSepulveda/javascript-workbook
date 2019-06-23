@@ -1,10 +1,10 @@
 body {
-    background-image: url(./dynamic-style.png);
+    background-image: url(./Pokemon\ backdrop.jpeg);
     font-family: 'Open Sans', sans-serif;
 }
 
 .container {
-    background-color: #F1EFE8;
+    background-color: rgba(6, 30, 213, 0.892);
     margin: 0 auto;
     width: 50%;
     border-radius: 12px;

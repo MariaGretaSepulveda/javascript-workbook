@@ -10,7 +10,7 @@ let p2value = null;
 let getPokemon1 = () => {
   fetch('https://pokeapi.co/api/v2/pokemon')
     .then(function (response) {
-      return response.json() //gets the pokemon object and api
+    return response.json() //gets the pokemon object and api
     })
     .then(function (data) {
       let random = Math.floor(Math.random() * 20)
@@ -49,19 +49,19 @@ let getPokemon2 = () => {
         let random = Math.floor(Math.random() * 20)
         console.log('random: ', random)
         let player = data.results[random]
-        p2 = player //the object
-        return fetch(player.url) //access that api within that pokemon
+        p2 = player 
+        return fetch(player.url) 
       })
       .then(function (response) {
         return response.json();
       })
       .then(function (data) {
-        // getting pokemon name here!
+       
         p2value = data.base_experience
         let p2name = data.species.name
         let display = `<h1> ${p2name} </h1>`
         display += 
-        // Experience: ${p2value}
+        
         `
         <br>
         <img src="${data.sprites.front_shiny}" >

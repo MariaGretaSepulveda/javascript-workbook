@@ -1,0 +1,14 @@
+{
+  "name": "apitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apitest.js",
+  "scripts": {
+    "test": "mocha --no-timeouts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^6.1.4"
+  }
+}

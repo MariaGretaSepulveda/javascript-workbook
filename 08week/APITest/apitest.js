@@ -80,13 +80,13 @@ let getPokemon2 = () => {
           console.log(p1.name, p2.name)
         if(p1value === p2value){
             console.log(`It's a draw!`)
-            document.getElementById('announcement').innerHTML = `It's a Draw!`
+            document.getElementById('Announcement').innerHTML = `It's a Draw!`
           } else if(p2value > p1value){
             console.log(`Winner: ${p2.name}!`)
-            document.getElementById('announcement').innerHTML = `${p2.name} wins!`
+            document.getElementById('Announcement').innerHTML = `${p2.name} wins!`
           } else if(p1value > p2value){
             console.log(`Winner: ${p1.name}!`)
-            document.getElementById('announcement').innerHTML = `${p1.name} wins!`
+            document.getElementById('Announcement').innerHTML = `${p1.name} wins!`
 
           }
       }

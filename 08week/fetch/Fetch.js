@@ -38,7 +38,7 @@ describe('#Test Fetch',()=>{
     it('Out of range',()=>{
         assert.equal(getPost(Fakefetch, 31/*, '2345'*/), 'Out of range');
     });
-    //for third test check if the key is the same as the default value. THIS IS WHERE YOU LEFT OFF
+    //for third test check if the key is the same as the default value. 
     // it('Not a valid key',()=>{
     //     assert.equal(getPost(Fakefetch, 15, '2345'), 'Not a valid key');
     // });
